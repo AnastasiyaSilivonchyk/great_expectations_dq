@@ -23,6 +23,7 @@ Created Expectations Suite is stored as json file in /expectations.prod_suite.js
 Data Docs can be viewed from /uncomitted/validations/data_docs/local_site/index.html
 or
 it will be opened automatically after running notebook with Expectations
+![image](https://user-images.githubusercontent.com/66337412/144494296-5b12b031-0698-455a-a06a-a7972cb4bcd7.png)
 
 # checkpoint creation
 To create checkpoint run the command:
