@@ -13,7 +13,7 @@ great_expectation --v3-api init (this commnd is used to create a new project wit
 
 # to edit existing suite
 For homework purpose prod_suite was created. To observe it or edit and run use the following command:
- 1) great_expectation --v3-api suite edit prod_suite
+ 1) great_expectation --v3-api suite edit hw_suite
  2) run all cells in opened Jupyter notebook
 
 Jupyter notebook itself stored in /uncommited/edit_prod_suite.ipynb
