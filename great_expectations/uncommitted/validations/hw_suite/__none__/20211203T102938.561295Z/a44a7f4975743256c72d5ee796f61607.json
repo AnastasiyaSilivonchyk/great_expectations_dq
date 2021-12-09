@@ -1,0 +1,397 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "Product",
+      "data_connector_name": "default_inferred_data_connector_name",
+      "datasource_name": "mssql_datasource"
+    },
+    "batch_markers": {
+      "ge_load_time": "20211203T072938.583293Z"
+    },
+    "batch_spec": {
+      "batch_identifiers": {},
+      "data_asset_name": "Product",
+      "schema_name": "Production",
+      "table_name": "Product",
+      "type": "table"
+    },
+    "expectation_suite_name": "hw_suite",
+    "great_expectations_version": "0.13.44",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2021-12-03T10:29:38.561295+00:00"
+    },
+    "validation_time": "20211203T072938.601295Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_context": {
+          "description": null
+        },
+        "expectation_type": "expect_table_columns_to_match_ordered_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "a44a7f4975743256c72d5ee796f61607",
+          "column_list": [
+            "ProductID",
+            "Name",
+            "ProductNumber",
+            "MakeFlag",
+            "FinishedGoodsFlag",
+            "Color",
+            "SafetyStockLevel",
+            "ReorderPoint",
+            "StandardCost",
+            "ListPrice",
+            "Size",
+            "SizeUnitMeasureCode",
+            "WeightUnitMeasureCode",
+            "Weight",
+            "DaysToManufacture",
+            "ProductLine",
+            "Class",
+            "Style",
+            "ProductSubcategoryID",
+            "ProductModelID",
+            "SellStartDate",
+            "SellEndDate",
+            "DiscontinuedDate",
+            "rowguid",
+            "ModifiedDate"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          "ProductID",
+          "Name",
+          "ProductNumber",
+          "MakeFlag",
+          "FinishedGoodsFlag",
+          "Color",
+          "SafetyStockLevel",
+          "ReorderPoint",
+          "StandardCost",
+          "ListPrice",
+          "Size",
+          "SizeUnitMeasureCode",
+          "WeightUnitMeasureCode",
+          "Weight",
+          "DaysToManufacture",
+          "ProductLine",
+          "Class",
+          "Style",
+          "ProductSubcategoryID",
+          "ProductModelID",
+          "SellStartDate",
+          "SellEndDate",
+          "DiscontinuedDate",
+          "rowguid",
+          "ModifiedDate"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_context": {
+          "description": null
+        },
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "a44a7f4975743256c72d5ee796f61607",
+          "max_value": 504,
+          "min_value": 504
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 504
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_context": {
+          "description": null
+        },
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "a44a7f4975743256c72d5ee796f61607",
+          "column": "ProductNumber"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_context": {
+          "description": null
+        },
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "a44a7f4975743256c72d5ee796f61607",
+          "column": "ProductNumber",
+          "max_value": 1.0,
+          "min_value": 1.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_context": {
+          "description": null
+        },
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "a44a7f4975743256c72d5ee796f61607",
+          "column": "ProductNumber",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "VARCHAR",
+            "NVARCHAR",
+            "TEXT",
+            "NTEXT",
+            "STRING",
+            "StringType",
+            "string",
+            "str",
+            "object",
+            "dtype('O')"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "NVARCHAR"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_context": {
+          "description": null
+        },
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "a44a7f4975743256c72d5ee796f61607",
+          "column": "Class",
+          "value_set": [
+            "H ",
+            "L ",
+            "M "
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "missing_count": 257,
+        "missing_percent": 50.99206349206349,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_context": {
+          "description": null
+        },
+        "expectation_type": "expect_column_values_to_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "a44a7f4975743256c72d5ee796f61607",
+          "column": "Class",
+          "mostly": 0.5
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 504,
+        "partial_unexpected_counts": [
+          {
+            "count": 11,
+            "value": "L "
+          },
+          {
+            "count": 7,
+            "value": "M "
+          },
+          {
+            "count": 2,
+            "value": "H "
+          }
+        ],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [
+          "L ",
+          "M ",
+          "L ",
+          "M ",
+          "L ",
+          "L ",
+          "L ",
+          "M ",
+          "L ",
+          "M ",
+          "L ",
+          "M ",
+          "L ",
+          "M ",
+          "L ",
+          "M ",
+          "L ",
+          "L ",
+          "H ",
+          "H "
+        ],
+        "unexpected_count": 247,
+        "unexpected_percent": 49.007936507936506
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_context": {
+          "description": null
+        },
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "a44a7f4975743256c72d5ee796f61607",
+          "column": "Class",
+          "max_value": 0.012145748987854251,
+          "min_value": 0.012145748987854251
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.012145748987854251
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_context": {
+          "description": null
+        },
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "a44a7f4975743256c72d5ee796f61607",
+          "column": "Class",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "VARCHAR",
+            "NVARCHAR",
+            "TEXT",
+            "NTEXT",
+            "STRING",
+            "StringType",
+            "string",
+            "str",
+            "object",
+            "dtype('O')"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "NCHAR"
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 9,
+    "success_percent": 100.0,
+    "successful_expectations": 9,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}
